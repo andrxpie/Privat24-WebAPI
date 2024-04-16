@@ -10,8 +10,8 @@ namespace Core.Interfaces
     public interface ICardsService
     {
         Task Create(CreateCardModel model);
-        IEnumerable<CardDto> GetAllByUser(string userId);
+        async IEnumerable<CardDto> GetAllByUser(string userId);
         Task Edit(EditCardModel model);
-        Task Remove(int id);
+        void Remove(int cardId);
     }
 }
