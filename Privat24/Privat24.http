@@ -1,0 +1,6 @@
+@Privat24_HostAddress = http://localhost:5171
+
+GET {{Privat24_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
